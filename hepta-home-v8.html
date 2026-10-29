@@ -238,7 +238,7 @@
   .stat b{display:block;font-family:var(--display);font-stretch:125%;font-weight:800;font-size:30px;color:var(--orange);line-height:1.1}
   .stat span{font-size:14px;color:rgba(255,255,255,.85)}
   .stats.names .stat b{font-size:clamp(17px,1.6vw,22px)}
-  .stats.names .stat:nth-child(4):last-child b{font-size:30px}
+  .stats .stat:last-child:nth-child(odd){grid-column:1/-1}
 
   /* ---------- contacto ---------- */
   .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:start}
@@ -308,7 +308,7 @@
     .live .btn{white-space:normal}
     .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:3vw}
     .stat{padding:4vw}
-    .stat b,.stats.names .stat b,.stats.names .stat:nth-child(4):last-child b{font-size:clamp(14px,4.4vw,26px)}
+    .stat b,.stats.names .stat b{font-size:clamp(14px,4.4vw,26px)}
     .stat span{font-size:clamp(12px,3.5vw,14px)}
   }
   @media (max-width:520px){
@@ -341,13 +341,16 @@
     <div class="ph" style="background-image:url('Imagenes/Banners/banner-asesoria-terreno.webp')"></div>
   </div>
   <div class="slide" data-title="Obra gruesa">
-    <div class="ph" style="background-image:url('Imagenes/Banners/banner-obra-gruesa.webp')"></div>
+    <div class="ph" style="background-image:url('Imagenes/Banners/banner-obra-gruesa-oficial.webp')"></div>
   </div>
   <div class="slide" data-title="Productos para asfalto">
     <div class="ph" style="background-image:url('Imagenes/Banners/banner-productos-asfalto.webp')"></div>
   </div>
   <div class="slide" data-title="Soluciones para tu obra">
     <div class="ph" style="background-image:url('Imagenes/Banners/banner-hepta-atardecer.webp')"></div>
+  </div>
+  <div class="slide" data-title="Retiro en bodega">
+    <div class="ph" style="background-image:url('Imagenes/Banners/banner-bodega-hepta.webp')"></div>
   </div>
 
   <div class="wrap hero-in">
@@ -409,9 +412,9 @@
     </div>
     <div class="cats-wrap" id="catsWrap">
     <div class="cats" id="categorias" tabindex="0" aria-label="Categorías de productos">
-      <a class="cat" href="https://heptachile.cl/categoria-producto/andamios/" target="_blank" rel="noopener"><div class="ph prod"><img loading="lazy" src="https://heptachile.cl/wp-content/uploads/2025/12/Andamio-de-fibra-de-vidrio-metaltech.jpg" alt="Andamio móvil con plataforma de trabajo y ruedas"><span class="badge">Más vendido</span></div>
+      <a class="cat" href="https://heptachile.cl/categoria-producto/andamios/" target="_blank" rel="noopener"><div class="ph"><img loading="lazy" src="Imagenes/Fotos%20Categoria/andamios.webp" alt="Operario trabajando sobre un andamio móvil amarillo dentro de una obra"><span class="badge">Más vendido</span></div>
         <div class="body"><h3>Andamios</h3><p>Estructuras certificadas: móviles, de aluminio, fibra de vidrio y estándar.</p><span class="more">Ver andamios →</span></div></a>
-      <a class="cat" href="https://heptachile.cl/categoria-producto/selladores-e-impermeabilizantes/" target="_blank" rel="noopener"><div class="ph"><img loading="lazy" src="https://heptachile.cl/wp-content/uploads/2024/09/pistola-silicona.jpg" alt="Aplicación de sellador con pistola"></div>
+      <a class="cat" href="https://heptachile.cl/categoria-producto/selladores-e-impermeabilizantes/" target="_blank" rel="noopener"><div class="ph"><img loading="lazy" src="Imagenes/Fotos%20Categoria/impermeabilizacion.webp" alt="Muro enterrado con membrana drenante negra y drenaje en una excavación"></div>
         <div class="body"><h3>Impermeabilización</h3><p>Cordones bentoníticos y de respaldo, bandas EPE, membranas, selladores y Rivestop System.</p><span class="more">Ver impermeabilizantes →</span></div></a>
       <a class="cat" href="https://heptachile.cl/categoria-producto/geosinteticos/" target="_blank" rel="noopener"><div class="ph"><img loading="lazy" src="Imagenes/Fotos%20Categoria/geosinteticos.webp" alt="Lámina drenante geosintética instalada junto a un muro enterrado"></div>
         <div class="body"><h3>Geosintéticos</h3><p>Geotextiles, geoceldas, láminas drenantes y geomallas para estabilizar y reforzar suelos.</p><span class="more">Ver geosintéticos →</span></div></a>
@@ -437,7 +440,7 @@
           <p>Proveemos materiales y soluciones de alta calidad para muros, losas y encofrados. Una fase crítica que define la durabilidad y resistencia de la obra requiere productos con certificación, que garanticen seguridad estructural y estabilidad a largo plazo.</p>
         </div>
       </div>
-      <a class="tile" href="https://heptachile.cl/categoria-producto/terciados/" target="_blank" rel="noopener"><div class="ph"><img loading="lazy" src="Imagenes/Fotos%20Categoria/terciados.webp" alt="Pallet de terciado fenólico con film negro"></div>
+      <a class="tile" href="https://heptachile.cl/categoria-producto/terciados/" target="_blank" rel="noopener"><div class="ph"><img loading="lazy" src="Imagenes/Fotos%20Categoria/terciados-obra-gruesa.webp" alt="Pallet de terciado fenólico en una obra de construcción"></div>
         <span class="arrow">→</span><h3>Terciados</h3><p>Terciados fenólicos, estructurales, marinos, mueblistas y OSB. Venta por pallets cerrados.</p></a>
       <a class="tile" href="https://heptachile.cl/categoria-producto/alzaprimas/" target="_blank" rel="noopener"><div class="ph"><img loading="lazy" src="Imagenes/Fotos%20Categoria/alzaprimas.webp" alt="Alzaprimas metálicas apuntalando una losa en una obra"></div>
         <span class="arrow">→</span><h3>Alzaprimas (puntales)</h3><p>Alzaprimas metálicas regulables para apuntalar losas y sostener moldajes.</p></a>
@@ -503,7 +506,6 @@
           <div class="stat"><b>Máxima seguridad</b><span>En entornos de riesgo</span></div>
           <div class="stat"><b>Sistema modular</b><span>Ultra ligero y resistente</span></div>
           <div class="stat"><b>Propiedades antichispas</b><span>Para medios explosivos o inflamables</span></div>
-          <div class="stat"><b>Webpay</b><span>Pago seguro online</span></div>
         </div>
       </div>
     </div>
